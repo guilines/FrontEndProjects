@@ -3,18 +3,18 @@
 }
 
 .marg_padd {
-    padding:5px;
+    padding: 5px;
 }
 
 .items {
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .body_style {
     padding: 10px;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    border:10px solid black;
-    margin-right: 955px;
+    border: 10px solid black;
+    width: 330px;
 }
 
 li {
@@ -30,28 +30,27 @@ p {
     font-size: 1em;
 }
 
-#box_1{
-    font-size:20px;
-    padding-left:15px;
-    padding-bottom:15px;
+.box_1{
+    font-size: 20px;
+    padding-left: 15px;
+    padding-bottom: 15px;
 
-    border:1px solid darkgrey;
-    overflow:hidden;
+    border: 1px solid darkgrey;
+    overflow: hidden;
     -webkit-box-shadow: 13px 20px 60px 1px rgba(122,122,122,0.99);
     -moz-box-shadow: 13px 20px 60px 1px rgba(122,122,122,0.99);
     box-shadow: 13px 20px 60px 1px rgba(122,122,122,0.99);
 }
 
-#box_2{
-    font-size:14px;
-    padding-right:14px;
-    border:1px solid darkgrey;
-    overflow:hidden;
-    width:82%;
+.box_2{
+    font-size: 14px;
+    padding-right: 14px;
+    border: 1px solid darkgrey;
+    overflow: hidden;
+    width: 285px;
 }
 
 
 .fig {
-    heigh00px;
     width: 300px;
 }
