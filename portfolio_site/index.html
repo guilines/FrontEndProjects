@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!--CSS Files-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Title</title>
+
+    <!--JS FILES-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<!-- Modals -->
+<div class="modal fade" id="stock-price-ind_modal" tabindex="-1" role="dialog" aria-labelledby="stockModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="stockModal">About</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive" src=./images/stock_prices.jpg>
+                <div class="modal_text">
+                    <p>
+                        The future value of a company stock over a period of time can be predicted using a methodology known
+                        as Stock Market prediction. Given some metrics over a period, such as opening stock price, volume of
+                        stocks traded and highest stock price traded, predictions can be done using an algorithm. The analyses
+                        of all possible inputs are carried out, in order to predict the Adjusted Close stock price (in other words,
+                        the future value of the company).
+                    </p>
+                    <p>
+                        Accurate future value prediction is an objective pursued by many companies. This project is not (yet)
+                        be sensible to all data available, trying to perform data-mining in twitter and other tools to predict if a
+                        company will have a drastic fall (or rise) on its stock price. I intend to investigate the financial market,
+                        understanding how it works and the variables responsible of its changes, not to create the best predictive
+                        tool on the market.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="research_modal" tabindex="-1" role="dialog" aria-labelledby="researchModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="researchModal">About</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive featured_image" src=./images/img_colormap.gif>
+                <div class="modal_text">
+                    <p>
+                        This project was developed for the Visualization of data course,
+                        Lectured by professor Paula Dornhofer Paro Costa as part of the Masters in Electrical Engineering of the State University of Campinas.
+                    </p>
+                    <p>
+                        The aim of this study is to conduct a practical analysis of human perception using data visualization
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="ml_modal" tabindex="-1" role="dialog" aria-labelledby="mlModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="mlModal">About</h4>
+            </div>
+            <div class="modal-body">
+                <img class="img-responsive featured_image" src=./images/Machine-Learning.jpg>
+                <div class="modal_text">
+                    <p>
+                        UdaCity's Machine Learning Engineering Assignments
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <!--HEADER-->
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3 ">
+            <!--Logo/img in here-->
+            <img class="img-responsive logo" src="images/cadcorp_developer_200x200.png" alt="Logo">
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-9  text-right text-uppercase name-desc">
+            <h1>Guilherme Camara</h1>
+            <h4>Full-Stack Developer</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <hr class="line">
+    </div>
+    <!--Main figure-->
+    <div class="row">
+        <div class="col-md-12">
+            <figure>
+                <picture>
+                    <img class="img-responsive main-image" src="images/devices.jpg" srcset="" sizes="" alt="">
+                </picture>
+            </figure>
+        </div>
+    </div>
+    <!--Featured work-->
+    <div class="col-md-12">
+        <h2 class="featured_work">Featured Work</h2>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <img data-toggle="modal" data-target="#stock-price-ind_modal" src="images/stock_prices.jpg" class="img-responsive featured_image" alt="Stock Prices Image">
+            <h3 class="text-uppercase featured_text">Stock Price Indicator</h3>
+            <p><a href="https://github.com/guilines/Stock-Price-Indicator">Stock Price Indicator</a></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <img data-toggle="modal" data-target="#research_modal" src="images/img_colormap.gif" class="img-responsive featured_image" alt="ColorMap Image">
+            <h3 class="text-uppercase featured_text">Perception in Visualisations Research</h3>
+            <p><a href="https://github.com/guilines/ia369_project">Research</a></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <img data-toggle="modal" data-target="#ml_modal" src="images/Machine-Learning.jpg" class="img-responsive featured_image" alt="Brain Image">
+            <h3 class="text-uppercase featured_text">Machine Learning Projects</h3>
+            <p class="featured_text"><a href="https://github.com/guilines/MachineLearningProjects">Machine Learning</a></p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
