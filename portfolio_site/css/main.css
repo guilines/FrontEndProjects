@@ -1,9 +1,6 @@
 body {
     font-family: 'Lato', sans-serif;
     color: lightslategrey;
-    /*padding-right: 35px;*/
-    /*padding-left: 35px;*/
-    /*margin-top:10px;*/
     font-weight: 300;
     margin: 0 auto;
 }
@@ -25,15 +22,15 @@ body {
 }
 
 
-.featured_image {
+.featured-image {
     margin: 0 auto;
 }
 
-.featured_text {
+.featured-text {
     font-size: 15px;
 }
 
-.featured_work {
+.featured-work {
     font-size: 30px;
 }
 
@@ -54,17 +51,17 @@ body {
         text-align: center;
     }
 
-    .featured_work {
+    .featured-work {
         font-size: 20px;
         text-align: center;
     }
 
-    .featured_image {
+    .featured-image {
         max-height: 40%;
         max-width: 40%;
     }
     
-    .featured_text {
+    .featured-text {
         font-size: 10px;
         text-align: center;
         color: midnightblue;
@@ -76,26 +73,21 @@ body {
         font-weight: 100;
     }
 
-    .logo {
-        vertical-align: left;
-    }
-
     .name-desc {
         text-align: right;
 
     }
 
-    .featured_work {
+    .featured-work {
         font-size: 50px;
         text-align: center;
     }
 
-    .featured_image {
+    .featured-image {
         max-height: 40%;
-        /*max-width: 60%;*/
     }
 
-    .featured_text {
+    .featured-text {
         font-size: 20px;
         text-align: center;
         color: cornflowerblue;

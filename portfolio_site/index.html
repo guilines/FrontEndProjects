@@ -17,14 +17,14 @@
 </head>
 <body>
 <!-- Modals -->
-<div class="modal fade" id="stock-price-ind_modal" tabindex="-1" role="dialog" aria-labelledby="stockModal" aria-hidden="true">
+<div class="modal fade" id="stock-price-ind_modal" tabindex="-1" role="dialog" aria-labelledby="stockModal">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="stockModal">About</h4>
             </div>
             <div class="modal-body">
-                <img class="img-responsive" src=./images/stock_prices.jpg>
+                <img class="img-responsive" src=./images/stock_prices.jpg alt="Stock Prices Image">
                 <div class="modal_text">
                     <p>
                         The future value of a company stock over a period of time can be predicted using a methodology known
@@ -49,14 +49,14 @@
     </div>
 </div>
 
-<div class="modal fade" id="research_modal" tabindex="-1" role="dialog" aria-labelledby="researchModal" aria-hidden="true">
+<div class="modal fade" id="research_modal" tabindex="-1" role="dialog" aria-labelledby="researchModal">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="researchModal">About</h4>
             </div>
             <div class="modal-body">
-                <img class="img-responsive featured_image" src=./images/img_colormap.gif>
+                <img class="img-responsive featured-image" src=./images/img_colormap.gif alt="ColorMap image">
                 <div class="modal_text">
                     <p>
                         This project was developed for the Visualization of data course,
@@ -74,14 +74,14 @@
     </div>
 </div>
 
-<div class="modal fade" id="ml_modal" tabindex="-1" role="dialog" aria-labelledby="mlModal" aria-hidden="true">
+<div class="modal fade" id="ml_modal" tabindex="-1" role="dialog" aria-labelledby="mlModal">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="mlModal">About</h4>
             </div>
             <div class="modal-body">
-                <img class="img-responsive featured_image" src=./images/Machine-Learning.jpg>
+                <img class="img-responsive featured-image" src=./images/Machine-Learning.jpg alt="Machine Learning Image">
                 <div class="modal_text">
                     <p>
                         UdaCity's Machine Learning Engineering Assignments
@@ -95,54 +95,59 @@
     </div>
 </div>
 
-<div class="container">
-    <!--HEADER-->
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-3 ">
-            <!--Logo/img in here-->
-            <img class="img-responsive logo" src="images/cadcorp_developer_200x200.png" alt="Logo">
+<!--HEADER-->
+<header class="container">
+    <main>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 ">
+                <!--Logo/img in here-->
+                <img class="img-responsive logo" src="images/cadcorp_developer_200x200.png" alt="Logo">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-9  text-right text-uppercase name-desc">
+                <h1>Guilherme Camara</h1>
+                <h4>Full-Stack Developer</h4>
+            </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-9  text-right text-uppercase name-desc">
-            <h1>Guilherme Camara</h1>
-            <h4>Full-Stack Developer</h4>
-        </div>
-    </div>
 
-    <div class="row">
-        <hr class="line">
-    </div>
-    <!--Main figure-->
-    <div class="row">
-        <div class="col-md-12">
-            <figure>
-                <picture>
-                    <img class="img-responsive main-image" src="images/devices.jpg" srcset="" sizes="" alt="">
-                </picture>
-            </figure>
+        <div class="row">
+            <div class="col-md-12">
+                <hr class="line">
+            </div>
         </div>
-    </div>
-    <!--Featured work-->
-    <div class="col-md-12">
-        <h2 class="featured_work">Featured Work</h2>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <img data-toggle="modal" data-target="#stock-price-ind_modal" src="images/stock_prices.jpg" class="img-responsive featured_image" alt="Stock Prices Image">
-            <h3 class="text-uppercase featured_text">Stock Price Indicator</h3>
-            <p><a href="https://github.com/guilines/Stock-Price-Indicator">Stock Price Indicator</a></p>
+        <!--Main figure-->
+        <div class="row">
+            <div class="col-md-12">
+                <figure>
+                    <picture>
+                        <img class="img-responsive main-image" src="images/devices.jpg" alt="Devices Image">
+                    </picture>
+                </figure>
+            </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <img data-toggle="modal" data-target="#research_modal" src="images/img_colormap.gif" class="img-responsive featured_image" alt="ColorMap Image">
-            <h3 class="text-uppercase featured_text">Perception in Visualisations Research</h3>
-            <p><a href="https://github.com/guilines/ia369_project">Research</a></p>
+        <!--Featured work-->
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="featured-work">Featured Work</h2>
+            </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <img data-toggle="modal" data-target="#ml_modal" src="images/Machine-Learning.jpg" class="img-responsive featured_image" alt="Brain Image">
-            <h3 class="text-uppercase featured_text">Machine Learning Projects</h3>
-            <p class="featured_text"><a href="https://github.com/guilines/MachineLearningProjects">Machine Learning</a></p>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <img data-toggle="modal" data-target="#stock-price-ind_modal" src="images/stock_prices.jpg" class="img-responsive featured-image" alt="Stock Prices Image">
+                <h3 class="text-uppercase featured-text">Stock Price Indicator</h3>
+                <p><a href="https://github.com/guilines/Stock-Price-Indicator" target="_blank">Stock Price Indicator</a></p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <img data-toggle="modal" data-target="#research_modal" src="images/img_colormap.gif" class="img-responsive featured-image" alt="ColorMap Image">
+                <h3 class="text-uppercase featured-text">Perception in Visualisations Research</h3>
+                <p><a href="https://github.com/guilines/ia369_project" target="_blank">Research</a></p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <img data-toggle="modal" data-target="#ml_modal" src="images/Machine-Learning.jpg" class="img-responsive featured-image" alt="Brain Image">
+                <h3 class="text-uppercase featured-text">Machine Learning Projects</h3>
+                <p class="featured-text"><a href="https://github.com/guilines/MachineLearningProjects" target="_blank">Machine Learning</a></p>
+            </div>
         </div>
-    </div>
-
-</div>
+    </main>
+</header>
 </body>
 </html>
