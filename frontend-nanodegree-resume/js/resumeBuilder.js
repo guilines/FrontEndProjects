@@ -188,7 +188,7 @@ function logClicks(x,y) {
 function inName(name) {
     name=name.split(" ");
     name[1]=name[1].toUpperCase();
-    return name.join(" ")
+    return name.join(" ");
 }
 $(document).click(function(loc) {
     // console.log(loc);
