@@ -80,16 +80,13 @@ bio.display = function() {
     var formattedMobile = HTMLmobile.replace(_data, bio.contacts.mobile);
     var formattedLocation = HTMLlocation.replace(_data, bio.contacts.location);
 
-    $(".flex-box").append(formattedMobile);
-    $(".flex-box").append(formattedEmail);
-    $(".flex-box").append(formattedGit);
-    $(".flex-box").append(formattedTwitter);
-    $(".flex-box").append(formattedLocation);
 
-    $("#header").append(formattedName);
-    $("#header").append(formattedRole);
-    $("#header").append(formattedBioPic);
-    $("#header").append(formattedWelcome);
+    $(".flex-box").append(formattedMobile,formattedEmail,
+        formattedGit,formattedTwitter,
+        formattedLocation);
+
+    $("#header").append(formattedName,formattedRole,
+        formattedBioPic,formattedWelcome);
 
     if (bio.skills.length) {
         $("#header").append(HTMLskillsStart);
@@ -114,10 +111,8 @@ work.display = function(){
         var formattedWorkDesc = HTMLworkDescription.replace(_data,job.description);
         var formattedWorkLoc = HTMLworkLocation.replace(_data,job.location);
 
-        $(".work-entry:last").append(formattedWorkEmployer+formattedWorkTitle);
-        $(".work-entry:last").append(formattedWorkLoc);
-        $(".work-entry:last").append(formattedWorkDate);
-        $(".work-entry:last").append(formattedWorkDesc);
+        $(".work-entry:last").append(formattedWorkEmployer+formattedWorkTitle,
+            formattedWorkLoc,formattedWorkDate,formattedWorkDesc);
     });
 };
 work.display();
@@ -131,9 +126,8 @@ projects.display = function(){
         var formattedDates = HTMLprojectDates.replace(_data,proj.dates);
         var formattedDesc = HTMLprojectDescription.replace(_data,proj.description);
 
-        $(".project-entry:last").append(formattedTitle);
-        $(".project-entry:last").append(formattedDates);
-        $(".project-entry:last").append(formattedDesc);
+        $(".project-entry:last").append(formattedTitle,formattedDates,
+        formattedDesc);
 
         if (proj.images.length) {
             proj.images.forEach(function (img) {
@@ -156,10 +150,8 @@ education.display = function(){
         var fmtDates = HTMLschoolDates.replace(_data,sch.dates);
         var fmtMajors = HTMLschoolMajor.replace(_data,sch.majors);
 
-        $(".education-entry:last").append(fmtName+fmtDeg);
-        $(".education-entry:last").append(fmtLoc);
-        $(".education-entry:last").append(fmtDates);
-        $(".education-entry:last").append(fmtMajors);
+        $(".education-entry:last").append(fmtName+fmtDeg,fmtLoc,
+            fmtDates,fmtMajors);
     });
     education.onlineCourses.forEach(function(online){
         var fmtTitle = HTMLonlineTitle.replace(_data,online.title);
@@ -167,12 +159,8 @@ education.display = function(){
         var fmtDates = HTMLonlineDates.replace(_data,online.dates);
         var fmtURL = HTMLonlineURL.replace(_data,online.url);
 
-        $("#education").append(HTMLonlineClasses);
-        $("#education").append(HTMLschoolStart);
-        $(".education-entry:last").append(fmtTitle+fmtSchool);
-        $(".education-entry:last").append(fmtDates);
-        $(".education-entry:last").append(fmtURL);
-
+        $("#education").append(HTMLonlineClasses,HTMLschoolStart);
+        $(".education-entry:last").append(fmtTitle+fmtSchool,fmtDates,fmtURL);
 
     });
 
