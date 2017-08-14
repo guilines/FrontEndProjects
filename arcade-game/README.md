@@ -11,7 +11,7 @@ No installation is needed. You just need to clone this repository and start play
 
 To clone this repository:
 
-`git clone https://github.com/guilines/FrontEndProjects/arcade-game`
+`git clone https://github.com/guilines/FrontEndProjects/tree/master/arcade-game`
 
 To get this running:
 
