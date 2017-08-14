@@ -1,7 +1,7 @@
 # Arcade Game
 
 This is an arcade game, where the player needs to reach to the water to win.
-The player starts the game with 3 lifes. Everytime it reaches the water, the player
+The player starts the game with 3 lives. Every time it reaches the water, the player
 wins a star, and one new bug (enemy). A special char is unlocked when 10 stars are reached.
 
 
