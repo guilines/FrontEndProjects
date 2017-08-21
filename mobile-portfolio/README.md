@@ -4,6 +4,18 @@ Your challenge, if you wish to accept it (and we sure hope you will), is to opti
 
 To get started, check out the repository and inspect the code.
 
+## Getting Started
+
+To clone this repo:
+
+` git clone https://github.com/guilines/FrontEndProjects.git`
+
+`cd mobile-portfolio`
+
+` Open the index.html with your favorite browser*`
+
+*Make sure it is not internet explorer. Because, if _ie_ is your favorite browser, there is something wrong with you =p 
+
 
 ## Optimizations
 - Minified and Inlined CSS
