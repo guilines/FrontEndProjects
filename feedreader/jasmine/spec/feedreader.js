@@ -24,15 +24,15 @@ $(function() {
     describe('The menu', function () {
 
         it('The menu is hidden by default',function () {
-            expect($('body').attr('class')).toContain('menu-hidden');
+            expect(document.body.classList).toContain('menu-hidden');
         });
 
         it('The menu displays and hides when clicked',function () {
             $('.menu-icon-link').click();
-            expect($('body').attr('class')).not.toContain('menu-hidden');
+            expect(document.body.classList).not.toContain('menu-hidden');
 
             $('.menu-icon-link').click();
-            expect($('body').attr('class')).toContain('menu-hidden');
+            expect(document.body.classList).toContain('menu-hidden');
         });
 
 
@@ -46,27 +46,31 @@ $(function() {
         });
 
         it('should have at least one entry',function (done) {
-            expect($('.feed').children().length).not.toBe(0);
+            expect($('.entry').length).not.toBe(0);
             done();
         });
 
     });
 
-    allFeeds.forEach(function (feed,idx) {
-        describe('New Feed Selection: '+ feed.name, function () {
-            beforeEach(function (done) {
-                loadFeed(idx, function () {
-                    done();
-                });
+
+    describe('New Feed Selection', function () {
+        var content0,content1;
+        beforeAll(function (done) {
+            loadFeed(0, function () {
+                content0 = $('.feed');
             });
 
-            it('Should display '+feed.name+' section', function (done) {
-                expect($('.header-title').text()).toBe(feed.name);
+            loadFeed(1, function () {
+                content1 = $('.feed');
                 done();
             });
-
         });
-    });
 
+        it('Should display different data', function (done) {
+            expect(content0).not.toBe(content1);
+            done();
+        });
+
+    });
 
 }());
