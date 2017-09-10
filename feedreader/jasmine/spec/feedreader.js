@@ -52,7 +52,6 @@ $(function() {
 
     });
 
-
     describe('New Feed Selection', function () {
         var content0,content1;
         beforeAll(function (done) {
