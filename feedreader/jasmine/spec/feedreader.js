@@ -46,7 +46,7 @@ $(function() {
         });
 
         it('should have at least one entry',function (done) {
-            expect($('.entry').length).not.toBe(0);
+            expect($('.feed .entry').length).toBeGreaterThan(0);
             done();
         });
 
@@ -57,12 +57,11 @@ $(function() {
         var content0,content1;
         beforeAll(function (done) {
             loadFeed(0, function () {
-                content0 = $('.feed');
-            });
-
-            loadFeed(1, function () {
-                content1 = $('.feed');
-                done();
+                content0 = $('.feed').html();
+                loadFeed(1, function () {
+                    content1 = $('.feed').html();
+                    done();
+                });
             });
         });
 
